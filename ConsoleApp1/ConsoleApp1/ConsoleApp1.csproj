@@ -46,13 +46,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Conexion\ConexionBD.cs" />
+    <Compile Include="Clases\ListTipoUsuario.cs" />
+    <Compile Include="Clases\ListUsuarios.cs" />
+    <Compile Include="Clases\TipoUsuario.cs" />
+    <Compile Include="Clases\Usuarios.cs" />
     <Compile Include="Conexion\ConexionMySQLBD.cs" />
+    <Compile Include="Conexion\Insertable.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

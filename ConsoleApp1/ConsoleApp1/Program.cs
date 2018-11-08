@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using MySql.Data.MySqlClient;
-
+using ConsoleApplication1.Clases;
 
 namespace ConsoleApp1
 {
@@ -17,11 +17,29 @@ namespace ConsoleApp1
             Console.WriteLine("Conectando...");
             Console.ReadLine();
 
-            MySqlConnection conexion = ConexionBD.GetMySqlConnection();
+            ConexionMySQLBD driver = ConexionMySQLBD.getInstance();
+
+            Usuarios usuario = new Usuarios(1, "Carlos", "Roberto", "11111111", "carlos", "1234","roberto.carlos@nocontesto");
+            Console.WriteLine(usuario.getOrderedFields());
+            Console.WriteLine(usuario.getOrderedValues());
+
+            driver.insertIntoTable(usuario, "usuarios");
+
 
             Console.WriteLine("Conectando...");
             Console.ReadLine();
 
+
+
+
+
+
+
+
+
+
+
+/*
             try
             {
                 Console.WriteLine("Conectando a base de datos.");
@@ -64,7 +82,7 @@ namespace ConsoleApp1
 
             Console.WriteLine("Desconectado. Presione tecla para terminar");
 
-            Console.ReadLine();
+            Console.ReadLine();*/
         }
     }
 }
