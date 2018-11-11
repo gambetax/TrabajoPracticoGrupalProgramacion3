@@ -19,11 +19,13 @@ namespace ConsoleApp1
 
             ConexionMySQLBD driver = ConexionMySQLBD.getInstance();
 
-            Usuarios usuario = new Usuarios(1, "Carlos", "Roberto", "11111111", "carlos", "1234","roberto.carlos@nocontesto");
-            Console.WriteLine(usuario.getOrderedFields());
-            Console.WriteLine(usuario.getOrderedValues());
+            //Usuarios usuario = new Usuarios(1, "Carlos", "Roberto", "11111111", "carlos", "1234","roberto.carlos@nocontesto");
+            //Console.WriteLine(usuario.getOrderedFields());
+            //Console.WriteLine(usuario.getOrderedValues());
 
-            driver.insertIntoTable(usuario, "usuarios");
+            //driver.insertIntoTable(usuario, "usuarios");
+
+            driver.SelectFromTable();
 
 
             Console.WriteLine("Conectando...");

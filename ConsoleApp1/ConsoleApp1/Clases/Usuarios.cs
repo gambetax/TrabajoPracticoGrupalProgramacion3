@@ -70,6 +70,16 @@ namespace ConsoleApplication1.Clases
                 escape+this.GetSetEmail +escape;
         }
 
+        public string getIdField()
+        {
+            throw new NotImplementedException();
+        }
+
+        public string getIdValue()
+        {
+            throw new NotImplementedException();
+        }
+
         //GET Y SET
 
         public int GetSetIdusuarios { get; set; }

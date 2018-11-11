@@ -78,19 +78,30 @@ namespace ConsoleApp1
 
         }
 
-        public void SelectFromTable(Insertable element, String tableName)
+        public void SelectFromTable()
         {
             MySqlConnection con = GetMySqlConnection();
 
             try
             {
 
-                string sql = "INSERT INTO " + tableName + " ( " + element.getOrderedFields() + " )" +
-                                " VALUES ( " + element.getOrderedValues() + " ) ";
+                string sql = "Select * from usuarios";
+                string consulta = "";
                 con.Open();
+
                 using (MySqlCommand cm = new MySqlCommand(sql, con))
                 {
-                    cm.ExecuteNonQuery();
+                    MySqlDataReader dr = cm.ExecuteReader();
+
+                    while(dr.Read())
+                    {
+                        consulta += dr[0] + "-- Nombre: " + dr[2] + ", Apellido: " + dr[3] + "\n" ;
+                    }
+
+                    Console.WriteLine(consulta);
+
+                    Console.ReadKey();
+
                 }
 
             }
