@@ -33,6 +33,11 @@ namespace ConsoleApplication1.Clases
         {
             this.ListaUsuarios.Add(Usu);
         }
+
+        public void LimpiarLista()
+        {
+            this.ListaUsuarios.Clear();
+        }
     }
 
 

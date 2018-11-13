@@ -13,12 +13,14 @@ namespace ConsoleApplication1.Clases
         ArrayList listaUsuarios = new ArrayList();
 
         //CONSTRUCTOR
+
         public ListTipoUsuario()
         {
             this.listaUsuarios = new ArrayList();
         }
 
         //METODOS
+
         public ArrayList MostrarListaTipoUsuarios()
         {
 
@@ -34,6 +36,11 @@ namespace ConsoleApplication1.Clases
         public void SetListaTipoUsuarios(TipoUsuario TipoUsu)
         {
             this.listaUsuarios.Add(TipoUsu);
+        }
+
+        public void LimpiarLista()
+        {
+            this.listaUsuarios.Clear();
         }
     }
 }

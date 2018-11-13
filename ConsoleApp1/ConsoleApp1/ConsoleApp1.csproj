@@ -46,9 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases Lista\ListaMaterias.cs" />
     <Compile Include="Clases Lista\ListaNovedades.cs" />
-    <Compile Include="Clases Lista\ListTipoUsuario.cs" />
-    <Compile Include="Clases Lista\ListUsuario.cs" />
+    <Compile Include="Clases Lista\ListaTipoUsuario.cs" />
+    <Compile Include="Clases Lista\ListaUsuario.cs" />
     <Compile Include="Clases\Materia.cs" />
     <Compile Include="Clases\Novedad.cs" />
     <Compile Include="Clases\TipoNovedad.cs" />
