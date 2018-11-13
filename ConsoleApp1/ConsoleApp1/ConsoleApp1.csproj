@@ -46,10 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Clases\ListTipoUsuario.cs" />
-    <Compile Include="Clases\ListUsuarios.cs" />
+    <Compile Include="Clases Lista\ListTipoUsuario.cs" />
+    <Compile Include="Clases Lista\ListUsuario.cs" />
+    <Compile Include="Clases\Novedad.cs" />
+    <Compile Include="Clases\TipoNovedad.cs" />
     <Compile Include="Clases\TipoUsuario.cs" />
-    <Compile Include="Clases\Usuarios.cs" />
+    <Compile Include="Clases\Usuario.cs" />
     <Compile Include="Conexion\ConexionMySQLBD.cs" />
     <Compile Include="Conexion\Insertable.cs" />
     <Compile Include="Program.cs" />
