@@ -25,11 +25,9 @@ namespace ConsoleApplication1.Clases
             foreach (TipoUsuario usu in listaUsuarios)
             {
                
-                Console.WriteLine(usu.ToString());
-
             }
 
-            return this.listaUsuarios;
+            return null;
 
         }
 

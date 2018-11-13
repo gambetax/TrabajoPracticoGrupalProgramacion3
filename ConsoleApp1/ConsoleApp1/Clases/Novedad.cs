@@ -28,6 +28,16 @@ namespace ConsoleApp1.Clases
             this.GetSetDescripcion = descripcion;
         }
 
+
+        // GET Y SET
+
+        public int GetSetIdNovedad { get => idNovedad; set => idNovedad = value; }
+        public int GetSetIdUsuario { get => idUsuario; set => idUsuario = value; }
+        public DateTime GetSetFecha { get => Fecha; set => Fecha = value; }
+        public int GetSetIdMateria { get => idMateria; set => idMateria = value; }
+        public string GetSetDescripcion { get => descripcion; set => descripcion = value; }
+
+
         //METODOS
 
         public string getOrderedFields()
@@ -56,14 +66,6 @@ namespace ConsoleApp1.Clases
             throw new NotImplementedException();
         }
 
-
-        // GET Y SET
-
-        public int GetSetIdNovedad { get => idNovedad; set => idNovedad = value; }
-        public int GetSetIdUsuario { get => idUsuario; set => idUsuario = value; }
-        public DateTime GetSetFecha { get => Fecha; set => Fecha = value; }
-        public int GetSetIdMateria { get => idMateria; set => idMateria = value; }
-        public string GetSetDescripcion { get => descripcion; set => descripcion = value; }
 
 
     }

@@ -7,32 +7,30 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1.Clases
 {
-    class TipoNovedad : Insertable
+    class Materia : Insertable
     {
-
-        private int idTipoNovedad;
+        private int idMateria;
         private string nombre;
         private string descripcion;
 
-        // CONSTRUCTOR
+        //CONSTRUCTOR
 
-        public TipoNovedad(int idTipoNovedad, string nombre, string descripcion)
+        public Materia(int idMateria, string nombre, string descripcion)
         {
-            this.GetSetIdTipoNovedad = idTipoNovedad;
+            this.GetSetIdMateria = idMateria;
             this.GetSetNombre = nombre;
             this.GetSetDescripcion = descripcion;
         }
 
-
         //GET Y SET
 
-        public int GetSetIdTipoNovedad { get => idTipoNovedad; set => idTipoNovedad = value; }
+        public int GetSetIdMateria { get => idMateria; set => idMateria = value; }
         public string GetSetNombre { get => nombre; set => nombre = value; }
         public string GetSetDescripcion { get => descripcion; set => descripcion = value; }
 
 
-        //METODOS
 
+        //METODO
 
         public string getIdField()
         {
@@ -46,16 +44,18 @@ namespace ConsoleApp1.Clases
 
         public string getOrderedFields()
         {
-            return "idTipoNovedad, nombre, descripcion";
+            return "idmateria, nombre, descripcion";
         }
 
         public string getOrderedValues()
         {
             string escape = "'";
 
-            return this.GetSetIdTipoNovedad + ", " +
+            return this.GetSetIdMateria + ", " +
                 escape + this.GetSetNombre + escape + ", " +
                 escape + this.GetSetDescripcion + escape;
         }
+
+
     }
 }

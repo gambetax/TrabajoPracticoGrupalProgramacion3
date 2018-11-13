@@ -20,11 +20,13 @@ namespace ConsoleApplication1.Clases
         //METODOS
          public ArrayList mostrarLista()
         {
-            foreach (Usuarios usuarios in ListaUsuarios)
+
+            foreach (TipoUsuario usu in ListaUsuarios)
             {
-                Console.WriteLine(usuarios.toString());
+
             }
-            return this.ListaUsuarios;
+
+            return null;
         }
 
         public void SetListaUsuario(Usuarios Usu)

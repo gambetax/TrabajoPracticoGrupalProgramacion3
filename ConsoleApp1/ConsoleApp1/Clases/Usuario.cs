@@ -19,6 +19,8 @@ namespace ConsoleApplication1.Clases
 
 
         //CONSTRUCTOR
+
+
         public Usuarios(int idusuarios, int id_TipoUsuario, string nombre, string apellido, string dni, string usuario, string pass, string email)
         {
             this.GetSetIdusuarios = idusuarios;
@@ -42,7 +44,23 @@ namespace ConsoleApplication1.Clases
             this.GetSetEmail = email;
         }
 
+
+
         private Usuarios() { }
+
+        //GET Y SET
+
+        public int GetSetIdusuarios { get; set; }
+
+        public int GetSetId_TipoUsuario { get => id_TipoUsuario; set => id_TipoUsuario = value; }
+        public string GetSetNombre { get => nombre; set => nombre = value; }
+        public string GetSetApellido { get => apellido; set => apellido = value; }
+        public string GetSetDni { get => dni; set => dni = value; }
+        public string GetSetUsuario { get => usuario; set => usuario = value; }
+        public string GetSetPass { get => pass; set => pass = value; }
+        public string GetSetEmail { get => email; set => email = value; }
+
+
 
         //METODOS
 
@@ -74,16 +92,6 @@ namespace ConsoleApplication1.Clases
             throw new NotImplementedException();
         }
 
-        //GET Y SET
 
-        public int GetSetIdusuarios { get; set; }
-
-        public int GetSetId_TipoUsuario { get => id_TipoUsuario; set => id_TipoUsuario = value; }
-        public string GetSetNombre { get => nombre; set => nombre = value; }
-        public string GetSetApellido { get => apellido; set => apellido = value; }
-        public string GetSetDni { get => dni; set => dni = value; }
-        public string GetSetUsuario { get => usuario; set => usuario = value; }
-        public string GetSetPass { get => pass; set => pass = value; }
-        public string GetSetEmail { get => email; set => email = value; }
     }
 }
