@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2048
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modelo", "Modelo.csproj", "{22A41B0E-F2D2-4C7B-8AB7-0C45B34FE305}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modelo", "Modelo\Modelo.csproj", "{22A41B0E-F2D2-4C7B-8AB7-0C45B34FE305}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vistas", "UImoderna1\Vistas.csproj", "{51C40C89-600A-4F43-8765-C4D78293E29A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{22A41B0E-F2D2-4C7B-8AB7-0C45B34FE305}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22A41B0E-F2D2-4C7B-8AB7-0C45B34FE305}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22A41B0E-F2D2-4C7B-8AB7-0C45B34FE305}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51C40C89-600A-4F43-8765-C4D78293E29A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51C40C89-600A-4F43-8765-C4D78293E29A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51C40C89-600A-4F43-8765-C4D78293E29A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51C40C89-600A-4F43-8765-C4D78293E29A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
